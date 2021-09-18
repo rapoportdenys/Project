@@ -1,0 +1,28 @@
+.radio-container {
+    width: 260px;
+    height: 40px;
+    background-color: #e6e6f0;
+    border-radius: 12px;
+    color: #323264;
+
+    input[type="radio"] {
+        display: none;
+    }
+    
+    input[type="radio"]:checked + label {
+        background-color: white;
+    }
+
+    label {
+        display: inline-block;
+    padding-top: 3px;   
+    cursor: pointer;
+    width: 130px;
+    height: 33px;
+    background-color: #e6e6f0;
+    border-radius: 12px;
+    color: #323264;
+    text-align: center;
+    }
+}
+

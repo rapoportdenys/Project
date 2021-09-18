@@ -1,0 +1,20 @@
+.mail-design {
+    &:before {
+        content: url(../img/Dot-separator.png);
+        position: relative;
+        top: -2px;
+        left: -5px;
+    }
+
+    &:after {
+        content: url(../img/Dot-separator.png);
+        position: relative;
+        top: -2px;
+        right: -8px;
+    }
+}
+
+.text-item-color{
+    color: #323264;
+    
+}

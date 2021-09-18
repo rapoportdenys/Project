@@ -1,0 +1,25 @@
+.color-vioblue {
+    color: #46466e;
+}
+
+.color-red {
+    color: red;
+}
+.social-btn {
+    width: 42px;
+    height: 42px;
+    background-color: #f5f5fa;
+    border-radius: 12px;
+}
+
+.social-icon-size {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+    .social-link-container {
+        display: flex;
+        justify-content: center;
+    }
+}

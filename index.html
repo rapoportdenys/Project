@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+
+    <title>Home page</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-first pt-4">
+        <header class="container d-flex flex-row justify-content-between py-4 ">
+            <div class=" d-flex flex-row justify-content-between header-adaptive flex-fill">
+                <div class="header-logo"> <a href="./index.html "><img src="./img/Logo Min.png"
+                            class="header-adaptive-img" alt=""></a></div>
+                <div class="d-flex flex-row text-decoration-none language-container">
+                    <div class="d-flex justify-content-center item-inner-header-language-container "><a href="" class="color-white ">УК</a>
+                    </div>
+                    <div class="mx-2 "><a href="" class="color-white ">РУ</a></div>
+                    <div><a href="" class="color-white ">EN</a></div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex flex-row">
+
+                    <div class="px-2 hidden"><a href="http://surl.li/afnfi" class="color-white fw-light">Одеса, Адміральський пр., 3</a>
+                    </div>
+                    <div class="px-2 "><a href="tel: + 38 (050) 390 15 91" class="tel  color-white "> + 38 (050) 390 15 91</a>
+                    </div>
+                    <div class="px-2 hidden"><a href=""><img src="./img/Facebook.png" alt=""></a></div>
+                </div>
+                <nav>
+                    <ul class="nav  text-decoration-none justify-content-end my-navbar-container ">
+                        <li class="nav-item"><a href="./pages/page_about.html"
+                                class="nav-link color-white my-link ">о нас</a></li>
+                        <li class="nav-item"><a href="./pages/cases_page.html"
+                                class="nav-link color-white  my-link ">послуги</a></li>
+                        <li class="nav-item"><a href="./pages/team_page.html"
+                                class="nav-link color-white  my-link ">команда</a></li>
+                        <li class="nav-item"><a href="./pages/publications_page.html"
+                                class="nav-link color-white  my-link ">публікації</a></li>
+                        <li class="nav-item"><a href="./pages/contacts_page.html"
+                                class="nav-link color-white my-link ">контакти</a></li>
+                    </ul>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class=" p-4">
+                            <ul class="nav nav-pills text-decoration-none ">
+                                <li class="nav-item"><a href="./pages/page_about.html" class="nav-link">о нас</a></li>
+                                <li class="nav-item"><a href="./pages/cases_page.html" class="nav-link">послуги</a></li>
+                                <li class="nav-item"><a href="./pages/team_page.html" class="nav-link">команда</a></li>
+                                <li class="nav-item"><a href="./pages/publications_page.html"
+                                        class="nav-link">публікації</a></li>
+                                <li class="nav-item"><a href="./pages/contacts_page.html" class="nav-link ">контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark my-navbar-mobile-container">
+                        <div class="container  justify-content-end">
+                            <button class="navbar-toggler my-navbar-design" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </nav>
+
+            </div>
+        </header>
+        <div class="container d-flex align-items-center  bg-logo-second-container position-relative">
+
+            <span class="flex-fill mb-5">
+                <h1 class="  text-inner-logo-container mb-5 ">системний адміністратор <br> правових рішень</h1>
+            </span>
+
+
+            <a href="" id="scroll_bottom" class="position-absolute start-50 bottom-0 z-index-2 mb-3"><img
+                    src="./img/Scroll-down.png" alt=""></a>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid bg-second pt-4 rounded-bottom">
+            <!-- vertical-nav-pills -->
+            <div class="container d-flex flex-column flex-lg-row align-items-start my-5">
+                <div class="nav flex-row flex-lg-column justify-content-center  w-100 align-items-end order-1 order-lg-0 me-3 " id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active nav-button-design h3 my-0" id="v-pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true" ><span class="adapt-none fw-bold"> Послідовні </span></button>
+                    <button class="nav-link nav-button-design h3 my-0" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false"><span class="adapt-none fw-bold"> Клієнтоорієнтовані</span></button>
+                    <button class="nav-link nav-button-design h3 my-0" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false"><span class="adapt-none fw-bold"> Інноваційні</span></button>
+                    <button class="nav-link nav-button-design h3 my-0" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false"> <span class="adapt-none fw-bold"> Бізнес-орієнтовані
+                        юристи</span></button>
+                </div>
+                <div class="tab-content order-0 order-lg-1" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <h3 class="text-white mx-4 mt-5">Перевертаємо уявлення про юридичні послуги</h3>
+                        <p class="text-white mx-4 mt-3">Консолідуючи багаторічний досвід і практику, юристи компанії
+                            супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато
+                            з них формують практику застосування морського права в Україні.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <h3 class="text-white mx-4 mt-5">Перевертаємо уявлення про юридичні послуги</h3>
+                        <p class="text-white mx-4 mt-3">Консолідуючи багаторічний досвід і практику, юристи компанії
+                            супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато
+                            з них формують практику застосування морського права в Україні.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <h3 class="text-white mx-4 mt-5">Перевертаємо уявлення про юридичні послуги</h3>
+                        <p class="text-white mx-4 mt-3">Консолідуючи багаторічний досвід і практику, юристи компанії
+                            супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато
+                            з них формують практику застосування морського права в Україні.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        <h3 class="text-white mx-4 mt-5">Перевертаємо уявлення про юридичні послуги</h3>
+                        <p class="text-white mx-4 mt-3">Консолідуючи багаторічний досвід і практику, юристи компанії
+                            супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато
+                            з них формують практику застосування морського права в Україні.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+            <div class="container pb-4">
+                <div class="container d-flex flex-column ">
+                    <div><a href="./pages/cases_page.html" class="menu-link color-blue">послуги</a></div>
+                    <div>
+                        <h4 class="headline fw-bold">Що ми вміємо робити краще за інших?</h4>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+                    <div class="col">
+                        <div class="card h-50 ">
+                            <a href="./pages/item-cases_page.html" class="ps-2"><img src="./img/Icon.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">IT та електронна комерція</h5>
+                                <p class="card-text text-item">Нескінчений потік договорів, податкові питання, трудові
+                                    відносини, корпоративні папери —
+                                    юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато,
+                                    щоб
+                                    наймати інхауз-юриста.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-50">
+                            <a href="./pages/item-cases_page.html" class="ps-2"><img src="./img/Icon-2.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">Комплексний щоденний
+                                    юридичний супровід</h5>
+                                <p class="card-text text-item">До того ж, з часом робота стане однотипною і нецікавою
+                                    для штатного юриста. А ще ми добре
+                                    знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
+                                    інформаційних
+                                    технологій.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-50">
+                            <a href="./pages/item-cases_page.html" class="ps-2"><img src="./img/Icon-3.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">Структуризація корпоративних відносин</h5>
+                                <p class="card-text text-item">Замість просто надавати юридичні послуги, ми закріпимо
+                                    юриста або цілу команду, які впишуться
+                                    в повсякденне життя вашої компанії</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-50">
+                            <a href="./pages/item-cases_page.html" class="ps-2"><img src="./img/Icon-4.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">Побудовa договірних відносин</h5>
+                                <p class="card-text text-item">TРаз на тиждень, чи тиждень на місяць у вас під боком є
+                                    ваш власний юрист. Будь-хто в компанії
+                                    може впіймати його біля кавоварки і просто поговорити про поточні справи замість
+                                    очікування
+                                    статусу update.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-50">
+                            <a href="./pages/item-cases_page.html" class="ps-2"><img src="./img/Icon-5.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">Захист бізнесу, інтелектуальної власності</h5>
+                                <p class="card-text text-item">А весь інший час він працюватиме над новими
+                                    різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так
+                                    чи
+                                    інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-50">
+                            <a href="./pages/item-cases_page.html" class="ps-2"> <img src="./img/Icon-6.png"
+                                    class="card-img-top img-size" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title color-blue fw-bold">Судове представництво</h5>
+                                <p class="card-text text-item">Невелика компанія, середнього розміру, чи вже лідер
+                                    ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний
+                                    відділ, чи
+                                    ні?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div class="container my-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators blue-circle-indicators blue-circle-position">
+                    <button type="button" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0"
+                        class="active " aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner  py-3">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-row adaptive-carousel-container"> <img src="./img/image.png"
+                                class="  adaptive-carousel-img" alt="...">
+                            <div class="d-flex flex-column  mx-4">
+                                <div><a href="./pages/team_page.html" class="menu-link">команда</a></div>
+                                <div>
+                                    <h1 class="gradient-headline">Ми звикли брати на себе
+                                        відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                                        ситуаціях, коли більшість безсилі.</h1>
+                                </div>
+                                <p class="m-0 carousel-text-item">Олександр Олександровський</p>
+                                <p class="m-0 carousel-text-item">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-row adaptive-carousel-container"> <img src="./img/image.png"
+                                class="  adaptive-carousel-img" alt="...">
+                            <div class="d-flex flex-column carousel-text-inner-container mx-4">
+                                <div><a href="" class="menu-link ">команда</a></div>
+                                <div>
+                                    <h1 class=" gradient-headline ">Ми звикли брати на себе
+                                        відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                                        ситуаціях, коли більшість безсилі.</h1>
+                                </div>
+                                <p class="m-0 carousel-text-item">Олександр Олександровський</p>
+                                <p class="m-0 carousel-text-item">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-row adaptive-carousel-container"> <img src="./img/image.png"
+                                class="  adaptive-carousel-img" alt="...">
+                            <div class="d-flex flex-column carousel-text-inner-container mx-4">
+                                <div><a href="" class="menu-link ">команда</a></div>
+                                <div>
+                                    <h1 class="gradient-headline ">Ми звикли брати на себе
+                                        відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                                        ситуаціях, коли більшість безсилі.</h1>
+                                </div>
+                                <p class="m-0 carousel-text-item">Олександр Олександровський</p>
+                                <p class="m-0  carousel-text-item">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cases -->
+
+        <div class="mt-5  cases-container container">
+            <div class="row">
+                <div class="col-md-4 m-0 p-0">
+                    <div class="row">
+                        <div class="col d-flex justify-content-start ms-4">
+                            <h6 class="cases-title py-2"> Успішні кейси</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card p-0 m-0 bg-transparent border-white">
+                                <div class="card-body">
+                                    <h5 class="card-title text-item-1 fw-normal">Супровід проекту з купівлі-продажу
+                                        сільськогосподарської продукції
+                                    </h5>
+                                    <p class="card-text text-item-2 ">Hillel IT School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 m-0 p-0 d-flex flex-column justify-content-end border border-white">
+                    <div class="card p-0 m-0 bg-transparent  border-0">
+                        <div class="card-body ">
+                            <h5 class="card-title text-item-1">Підготовка комплексного юридичного висновку для
+                                європейського банку</h5>
+                            <p class="card-text text-item-2">WannaBiz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 m-0 p-0 border-white border d-flex flex-column justify-content-end">
+                    <div class="card p-0 m-0 bg-transparent border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-item-1">Супровід проекту з купівлі-продажу
+                                сільськогосподарської продукції</h5>
+                            <p class="card-text text-item-2">tapgerine
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 m-0 p-0 border-white border d-flex flex-column justify-content-end">
+                    <div class="card p-0 m-0 bg-transparent border-0">
+                        <div class="card-body ">
+                            <h5 class="card-title text-item-1">Представництво інтересів великого зернотрейдера в
+                                податковому спорі
+                            </h5>
+                            <p class="card-text text-item-2">3D LOOK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 m-0 p-0 border-white border d-flex flex-column justify-content-end">
+                    <div class="card p-0 m-0 bg-transparent border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-item-1">Оскарження податкових повідомлень-рішень ДФС</h5>
+                            <p class="card-text text-item-2">adtelligent
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 m-0 p-0 border-white border d-flex flex-column justify-content-end">
+                    <div class="card p-0 m-0 bg-transparent border-0">
+                        <div class="card-body ">
+                            <h5 class="card-title text-item-1">Супровід проекту з кредитування агротрейдерів
+                                мальтійським банком</h5>
+                            <p class="card-text text-item-2">Clikky
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- companies logos -->
+        <div class="container-fluid mt-4">
+            <div class="container">
+                <h5 class="text-center text-uppercase">Вже довіряють нам</h5>
+            </div>
+            <div class="row">
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href="https://dnipro.ithillel.ua/"> <img src="./img/bg-logo-companies/Item.png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3 border-0 p-0">
+                    <a href="http://wannabiz.com.ua/"></a> <img src="./img/bg-logo-companies/Item (1).png"
+                        class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href=""><img src="./img/bg-logo-companies/Item (2).png" class="card-img my-card-img "
+                            alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href="https://3dlook.me/"><img src="./img/bg-logo-companies/Item (3).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href=""> <img src="./img/bg-logo-companies/Item (4).png" class="card-img my-card-img "
+                            alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href="https://adtelligent.com/"> <img src="./img/bg-logo-companies/Item (5).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href="https://clickky.biz/"> <img src="./img/bg-logo-companies/Item (6).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3 border-0 p-0">
+                    <a href="https://ecolease.com.ua"> <img src="./img/bg-logo-companies/Item (7).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href=""> <img src="./img/bg-logo-companies/Item (8).png" class="card-img my-card-img "
+                            alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3 border-0 p-0">
+                    <a href="https://city-park.com.ua/"> <img src="./img/bg-logo-companies/Item (9).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3  border-0 p-0">
+                    <a href="https://www.artprintstudio.com.ua/"> <img src="./img/bg-logo-companies/Item (10).png"
+                            class="card-img  my-card-img   " alt="..."></a>
+                </div>
+                <div class="card col-6 col-md-3 border-0 p-0">
+                    <a href="https://ultimate-card.com/"> <img src="./img/bg-logo-companies/Item (11).png"
+                            class="card-img my-card-img " alt="..."></a>
+                </div>
+            </div>
+        </div>
+        <!-- publications -->
+        <div class="container-fluid  pt-3 publications-container ">
+            <div class="container"><a href="./pages/publications_page.html" class="menu-link h5 ">публікації</a>
+
+                <h4 class="gradient-headline">Нам є що розказати</h4>
+            </div>
+            <div class="container position-relative adaptive-publication-wrap">
+                <div class="row overflow-hidden h-720 inner-shadow ">
+                    <div class="col-md my-column">
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <h6 class="card-title my-card-title">Валютний контроль помер, хай живе валютний
+                                    контроль!</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">14 червня</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">Експерти проводять
+                                    конференції, круглі
+                                    столи та іншого штибу заходи на тему «лібералізація валютного законодавства».
+                                    Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».</p>
+                            </div>
+                        </div>
+                        <div class="card my-4">
+                            <img src="./img/publications-image/image-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-card-title">Заповіт міленіала</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">19 серпня</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">Що і як
+                                    передаватимуть у спадщину
+                                    сучасні влогери, опініон лідери і криптомільйонери Типовий спадок українського
+                                    покоління Х виглядає так: квартира у…</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md my-column">
+                        <div class="card my-4">
+                            <img src="./img/publications-image/image-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-card-title">Equity associate</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">22 квітня</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">На проектах я джун.
+                                    При цьому я
+                                    співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що
+                                    якщо буду…</p>
+        
+                            </div>
+                        </div>
+                        <div class="card my-4 ">
+                            <img src="./img/publications-image/image-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-card-title">Закон про мови: як зробити свій сайт відповідним
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">19 серпня</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">Наталія Кирик,
+                                    керівник контент студії
+                                    Wordfactory.ua По-перше, це красиво! Це аргумент номер один на користь
+                                    україномовного сайту. По-друге, це ефективно. У…</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md my-column">
+                        <div class="card my-4">
+                           <a href="./pages/publications-item_page.html"><img src="./img/publications-image/image-4.png" class="card-img-top" alt="..."></a> 
+                            <div class="card-body">
+                               <a href="./pages/publications-item_page.html" class="text-decoration-none"> <h5 class="card-title my-card-title">Штраф для «Корпорації добра»: що буде з Google та
+                                    іншими за порушення GDPR</h5></a>
+                                <h6 class="card-subtitle mb-2 text-muted">29 вересня</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">І чому стягнення у 50
+                                    млн євро може
+                                    стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із
+                                    захисту даних.</p>
+        
+                            </div>
+                        </div>
+                        <div class="card my-4">
+                           <img src="./img/publications-image/image-5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-card-title">Компенсація витрат на навчання дитини в дитячому
+                                    садку та школі</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">5 Лютого 2018</h6>
+                                <p class="card-text border-top border-3 h6 pt-3 d-none d-sm-block">Про що йде мова В
+                                    червні цього року
+                                    Верховна Рада внесла зміни до Податкового кодексу України. Відтепер батьки, які
+                                    отримують офіційну…</p>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="  d-flex  position-absolute bottom-0 start-50 translate-middle ">
+                    <button class=" flex-fill btn-design" type="button">Ще публікації</button>
+                </div>
+            </div>
+
+    </main>
+    <div class="container-fluid footer">
+        <footer class="container border-top py-3  border-2 ">
+            <div class=" my-4 d-flex flex-wrap justify-content-center justify-content-md-between">
+                <div class="col-auto">
+                    <div class="d-flex flex-wrap flex-column flex-lg-row align-items-center">
+                        <span class="mx-4 py-1">Одеса, Адміральський пр., 3</span>
+                        <a class="map-before py-1 text-decoration-none" href="">Подивитися на мапі</a>
+                    </div>
+                    <div class="d-flex flex-wrap flex-column flex-lg-row align-items-center ps-4">
+                        <a class="py-1" href=""><img src="./img/facebook-icon-bot.png" alt=""></a>
+                        <a class="tel-footer text-decoration-none mx-3 py-1 text-black"
+                            href="tel: + 38 (050) 390 15 91"> +
+                            38 (050) 390 15 91</a>
+                        <a class="py-1 text-decoration-none" href="mailto: contact@hlegals.net">contact@hlegals.net</a>
+                    </div>
+                </div>
+                <p class="text-muted text-wrap py-1 text-center">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
